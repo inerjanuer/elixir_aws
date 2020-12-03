@@ -10,7 +10,7 @@
  AmazonEC2FullAccess \
  EC2InstanceConnect \
  We assign tags to the finaltest role. \
- We assign a name to the role assigned to the user rolefinaltest. \
+ We assign a name to the role assigned to the user rolefinaltest. 
 
 ###### config  phoenix amazon linux #######
 
@@ -23,7 +23,7 @@ sudo yum install git
 
 # erlang deps
 sudo yum groupinstall "Development Tools" \
-sudo yum install ncurses-devel openssl-devel \
+sudo yum install ncurses-devel openssl-devel 
 
 # erlang
 wget http://www.erlang.org/download/otp_src_23.1.tar.gz \
@@ -32,24 +32,24 @@ rm otp_src_23.1.tar.gz \
 cd otp_src_23.1/ \
 ./configure \
 make \
-sudo make install \
+sudo make install 
 
-cd .. \
+cd .. 
 
 # elixir
 wget https://github.com/elixir-lang/elixir/archive/v1.11.2.zip \
 unzip v1.11.2.zip \
 cd elixir-1.11.2/ \
 make \
-sudo make install \
+sudo make install 
 
 echo "PATH=\$PATH:/home/ec2-user/elixir-1.4.2/bin" >> ~/.bashrc \
-cd .. \
+cd .. 
 
 
 # phoenix deps
 sudo yum install postgresql \
-mix local.hex \
+mix local.hex 
 
 
 # listen on port 80 as well
@@ -58,16 +58,16 @@ sudo iptables -t nat -A PREROUTING -p tcp --dport 80 -j REDIRECT --to-port 4000
 # install node js
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.37.2/install.sh | bash \
 nvm install node \
-npm -g install brunch \
+npm -g install brunch 
 
 
 mix archive.install hex phx_new 1.5.7 \
 mix phx.new [namefinal] \
 cd [namefinal] \
-cd config \
+cd config 
 
 # config database 
-vi devp.exs \
+vi devp.exs 
 
 ###  username: "user_db",
 ###  password: "password_db",
@@ -79,7 +79,7 @@ cd assets/ \
 npm install \
 cd .. \
 mix ecto.create \
-mix -S phx.server \
+mix -S phx.server 
 
 
 ## commentary ##
