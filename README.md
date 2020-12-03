@@ -1,4 +1,4 @@
-##### create user  #####
+#create user
 
  I access IAM
  create a new user
@@ -69,10 +69,10 @@ cd config
 # config database 
 vi devp.exs
 
-#  username: "user_db",
-#  password: "password_db",
-#  database: "name_db",
-#  hostname: "endpoint_db_aws",
+###  username: "user_db",
+###  password: "password_db",
+### database: "name_db",
+###  hostname: "endpoint_db_aws",
 
 cd ..
 cd assets/
