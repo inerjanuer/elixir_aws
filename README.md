@@ -1,16 +1,16 @@
 ##### create user  #####
 
-# I access IAM
-# create a new user
-# We save access id, access id, password
-# After I create role
-# The user's access id is assigned
-# User access policies are assigned
-# AmazonRDSFullAccess
-# AmazonEC2FullAccess
-# EC2InstanceConnect
-# We assign tags to the finaltest role.
-# We assign a name to the role assigned to the user rolefinaltest.
+ I access IAM
+ create a new user
+ We save access id, access id, password
+ After I create role
+ The user's access id is assigned
+ User access policies are assigned
+ AmazonRDSFullAccess
+ AmazonEC2FullAccess
+ EC2InstanceConnect
+ We assign tags to the finaltest role.
+ We assign a name to the role assigned to the user rolefinaltest.
 
 ###### config  phoenix amazon linux #######
 
